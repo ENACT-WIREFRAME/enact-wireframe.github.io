@@ -2,229 +2,66 @@
 layout: default
 ---
 
-
 <div class="container-fluid p-0">
-
 	<div class="clearfix">
 		<form class="form-inline float-right mt--1 d-none d-md-flex">
 			<button class="btn btn-primary"><i class="align-middle" data-feather="plus"></i> New project</button>
 		</form>
 		<h1 class="h3 mb-3">Your Report</h1>
 	</div>
-
+	<!-- end .clearfix -->
 	<div class="row">
 		<div class="col-12 col-md-6 col-xl d-flex">
 			<div class="card flex-fill">
 				<div class="card-body py-2">
 					<div class="row">
-						<!--<div class="col-12 col-md-6 align-self-center text-center text-md-left">
-							<h4>2562</h4>
-							<p class="mb-0">Header</p>
-						</div>
-						<div class="col-12 col-md-6 align-self-center text-center text-md-right">
-							<div data-label="50%" class="doughnut mt-2 doughnut-primary doughnut-50"></div>
-						</div>-->
+						
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- end .col -->
 		<div class="col-12 col-md-6 col-xl d-flex">
 			<div class="card flex-fill">
 				<div class="card-body py-2">
 					<div class="row">
-						<!--<div class="col-12 col-md-6 align-self-center text-center text-md-left">
-							<h4>17212</h4>
-							<p class="mb-0">Visitors Today</p>
-						</div>
-						<div class="col-12 col-md-6 align-self-center text-center text-md-right">
-							<div data-label="25%" class="doughnut mt-2 doughnut-danger doughnut-25"></div>
-						</div>-->
+						
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- end .col -->
 		<div class="col-12 col-md-6 col-xl d-flex">
 			<div class="card flex-fill">
 				<div class="card-body py-2">
 					<div class="row">
-						<!--<div class="col-12 col-md-6 align-self-center text-center text-md-left">
-							<h4>$ 24300</h4>
-							<p class="mb-0">Total Earnings</p>
-						</div>
-						<div class="col-12 col-md-6 align-self-center text-center text-md-right">
-							<div data-label="60%" class="doughnut mt-2 doughnut-success doughnut-60"></div>
-						</div>-->
+						
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- end .col -->
 		<div class="col-12 col-md-6 col-xl d-flex">
 			<div class="card flex-fill">
 				<div class="card-body py-2">
 					<div class="row">
-						<!--<div class="col-12 col-md-6 align-self-center text-center text-md-left">
-							<h4>43</h4>
-							<p class="mb-0">Pending Orders</p>
-						</div>
-						<div class="col-12 col-md-6 align-self-center text-center text-md-right">
-							<div data-label="70%" class="doughnut mt-2 doughnut-warning doughnut-70"></div>
-						</div>-->
+						
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- end .col -->
 		<div class="col-12 col-md-6 col-xl d-none d-xxl-flex">
 			<div class="card flex-fill">
 				<div class="card-body py-2">
 					<div class="row">
-						<!--<div class="col-12 col-md-6 align-self-center text-center text-md-left">
-							<h4>$ 18700</h4>
-							<p class="mb-0">Total Revenue</p>
-						</div>
-						<div class="col-12 col-md-6 align-self-center text-center text-md-right">
-							<div data-label="55%" class="doughnut mt-2 doughnut-danger doughnut-55"></div>
-						</div>-->
+						
 					</div>
 				</div>
 			</div>
 		</div>
+		<!-- end .col -->
 	</div>
-	<div class="row">
-		<div class="col-12 col-lg-8 d-flex">
-			<div class="card flex-fill w-100">
-				<!--<div class="card-header">
-					<h5 class="card-title mb-0">Total Revenue</h5>
-				</div>
-				<div class="card-body">
-					<div class="chart">
-						<canvas id="chartjs-dashboard-line"></canvas>
-					</div>
-				</div>-->
-			</div>
-
-			<!--<script>
-				document.addEventListener("DOMContentLoaded", function(event) {
-					// Line chart
-					new Chart(document.getElementById("chartjs-dashboard-line"), {
-						type: 'line',
-						data: {
-							labels: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-							datasets: [{
-								label: "Sales ($)",
-								fill: true,
-								backgroundColor: "transparent",
-								borderColor: "#0cc2aa",
-								data: [2015, 1465, 1487, 1796, 1387, 2123, 2866, 2548, 3902, 4938, 3917, 4927]
-							}, {
-								label: "Orders",
-								fill: true,
-								backgroundColor: "transparent",
-								borderColor: "#5fc27e",
-								borderDash: [4, 4],
-								data: [928, 734, 626, 893, 921, 1202, 1396, 1232, 1524, 2102, 1506, 1887]
-							}]
-						},
-						options: {
-							maintainAspectRatio: false,
-							legend: {
-								display: false
-							},
-							tooltips: {
-								intersect: false
-							},
-							hover: {
-								intersect: true
-							},
-							plugins: {
-								filler: {
-									propagate: false
-								}
-							},
-							scales: {
-								xAxes: [{
-									reverse: true,
-									gridLines: {
-										color: "rgba(0,0,0,0.05)"
-									}
-								}],
-								yAxes: [{
-									ticks: {
-										stepSize: 500
-									},
-									display: true,
-									borderDash: [5, 5],
-									gridLines: {
-										color: "rgba(0,0,0,0)",
-										fontColor: "#fff"
-									}
-								}]
-							}
-						}
-					});
-				});
-			</script>-->
-		</div>
-		<div class="col-12 col-lg-4 d-flex">
-			<div class="card flex-fill w-100">
-				<!--<div class="card-header">
-					<h5 class="card-title mb-0">Current Visitors</h5>
-				</div>
-				<div class="card-body px-4">
-					<div id="usa_map" style="height:294px;"></div>
-				</div>-->
-			</div>
-
-			<!--<script>
-				document.addEventListener("DOMContentLoaded", function(event) {
-					$('#usa_map').vectorMap({
-						map: 'us_aea',
-						backgroundColor: 'transparent',
-						normalizeFunction: "polynomial",
-						hoverOpacity: .7,
-						hoverColor: false,
-						regionStyle: {
-							initial: {
-								fill: '#DCE3E8'
-							}
-						},
-						markerStyle: {
-							initial: {
-								"r": 9,
-								"fill": "#007bff",
-								"fill-opacity": .9,
-								"stroke": "#fff",
-								"stroke-width": 7,
-								"stroke-opacity": .4
-							},
-							hover: {
-								"stroke": "#fff",
-								"fill-opacity": 1,
-								"stroke-width": 1.5
-							}
-						},
-						markers: [{
-							latLng: [37.77, -122.41],
-							name: 'San Francisco: 375'
-						}, {
-							latLng: [40.71, -74.00],
-							name: 'New York: 350'
-						}, {
-							latLng: [39.09, -94.57],
-							name: 'Kansas City: 250'
-						}, {
-							latLng: [36.16, -115.13],
-							name: 'Las Vegas: 275'
-						}, {
-							latLng: [32.77, -96.79],
-							name: 'Dallas: 225'
-						}]
-					});
-				})
-			</script>-->
-		</div>
-	</div>
-
-	</div>
-	<div class="row">
-	</div>
+	<!-- end .row -->
 </div>
+<!-- end .container -->
