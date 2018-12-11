@@ -10,6 +10,8 @@
 }
 .navbar-brand{
     padding: 1.15rem 1.25rem;
+    min-width: 220px;
+    max-width: 220px;
 }
 .sidebar-sticky{
     padding-top: 4.5rem
