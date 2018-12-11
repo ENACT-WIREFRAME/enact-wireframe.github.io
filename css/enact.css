@@ -8,3 +8,6 @@
 [role="main"] {
     padding-top: 48px;
 }
+.navbar-brand{
+    padding: 1.15rem 1.25rem;
+}
