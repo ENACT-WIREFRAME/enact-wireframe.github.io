@@ -1,0 +1,7 @@
+.navbar-brand .feather, .sidebar-brand svg {
+    color: #0cc2aa;
+    height: 24px;
+    width: 24px;
+    margin-left: -.15rem;
+    margin-right: .375rem;
+}
