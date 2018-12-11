@@ -5,3 +5,6 @@
     margin-left: -.15rem;
     margin-right: .375rem;
 }
+[role="main"] {
+    padding-top: 48px;
+}
