@@ -17,11 +17,18 @@
 
 <body>
 	<div class="wrapper">
-		<nav class="sidebar">
+		<div class="sidebar">
 			<div class="sidebar-content">
 				<a class="sidebar-brand" href="index.html">
           				{% include logo.html %}<span class="align-middle">ENACT</span>
 				</a>
+			</div
+		</div>
+		<div class="main">
+		</div>
+		<!--end sidebar-->
+		<nav class="sidebar">
+			<div class="sidebar-content">
 				<ul class="sidebar-nav">
 					<li class="sidebar-header">
 					sidebar header
@@ -37,9 +44,7 @@
 		</nav>
 		<!-- end .sidebar -->
 		<div class="main">
-			<nav class="navbar navbar-expand navbar-light bg-white">
-				<h4>National Diabetes Audit</h4>
-			</nav>
+			
 			<main class="content">
 				{{ content }}
 			</main>
