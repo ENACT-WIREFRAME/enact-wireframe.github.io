@@ -1,63 +1,61 @@
 ---
-layout: default
+layout: page
 ---
 {% include page-header.html %}
-<body class="text-centre signin">
-    <main role="main">
-        <div class="container">
-            <h2 class="h4 mb-3 font-weight-normal">Please select your audit</h2>
+<div class="container">
+    <h2 class="h4 mb-3 font-weight-normal">Please select your audit</h2>
+</div>
+<div class="container">
+    <!--<img class="mb-4" src="{{ site.baseurl }}/images/enact-big.svg" alt="" height="64">-->
+    <div class="row">
+        <div class="col-4">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#bt" role="tab" aria-controls="v-pills-home" aria-selected="true">Blood Transfusions</a>
+              <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#minap" role="tab" aria-controls="v-pills-settings" aria-selected="false">MINAP</a>
+              <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#nda" role="tab" aria-controls="v-pills-home" aria-selected="true">National Diabetes Audit</a>
+              <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#picanet" role="tab" aria-controls="v-pills-profile" aria-selected="false">PICANET</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#tarn" role="tab" aria-controls="v-pills-messages" aria-selected="false">TARN</a>
+            </div>
         </div>
-        <div class="container">
-            <!--<img class="mb-4" src="{{ site.baseurl }}/images/enact-big.svg" alt="" height="64">-->
-            <div class="row">
-                <div class="col-4">
-                    <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-                      <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#bt" role="tab" aria-controls="v-pills-home" aria-selected="true">Blood Transfusions</a>
-                      <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#minap" role="tab" aria-controls="v-pills-settings" aria-selected="false">MINAP</a>
-                      <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#nda" role="tab" aria-controls="v-pills-home" aria-selected="true">National Diabetes Audit</a>
-                      <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#picanet" role="tab" aria-controls="v-pills-profile" aria-selected="false">PICANET</a>
-                      <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#tarn" role="tab" aria-controls="v-pills-messages" aria-selected="false">TARN</a>
+        <div class="col-8">
+            <div class="tab-content" id="bt">
+                <div class="card flex-fill w-100">
+                    <div class="card-header">
+                        <h5 class="card-title mb-0">Please select your role</h5>
                     </div>
-                </div>
-                <div class="col-8">
-                    <div class="tab-content" id="bt">
-                        <div class="card flex-fill w-100">
-                            <div class="card-header">
-                                <h5 class="card-title mb-0">Please select your role</h5>
+                    <div class="card-body">
+                        <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
+                            <div class="input-group mb-3">
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose role</label>
+                              </div>
+                              <div class="input-group-append">
+                                <a href="{{ site.baseurl }}/consent" class="btn btn-success transition">Next</a>
+                              </div>
                             </div>
-                            <div class="card-body">
-                                <div class="tab-pane fade show active" id="v-pills-home" role="tabpanel" aria-labelledby="v-pills-home-tab">
-                                    <div class="input-group mb-3">
-                                      <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="inputGroupFile02">
-                                        <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose role</label>
-                                      </div>
-                                      <div class="input-group-append">
-                                        <a href="{{ site.baseurl }}/consent" class="btn btn-success transition">Next</a>
-                                      </div>
-                                    </div>
-                                    <div>Audit information</div>
-                                </div>
-                                <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                                    <div class="input-group mb-3">
-                                      <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="inputGroupFile02">
-                                        <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose role</label>
-                                      </div>
-                                      <div class="input-group-append">
-                                        <a href="{{ site.baseurl }}/consent" class="btn btn-success transition">Next</a>
-                                      </div>
-                                    </div>
-                                    <div>Audit information</div>
-                                </div>
-                                <div class="tab-pane fade" id="minap" role="tabpanel" aria-labelledby="v-pills-messages-tab">
-                                    <div class="input-group mb-3">
-                                      <div class="custom-file">
-                                        <input type="file" class="custom-file-input" id="inputGroupFile02">
-                                        <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose role</label>
-                                      </div>
-                                      <div class="input-group-append">
-                                        <a href="{{ site.baseurl }}/consent" class="btn btn-success transition">Next</a>
+                            <div>Audit information</div>
+                        </div>
+                        <div class="tab-pane fade" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
+                            <div class="input-group mb-3">
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose role</label>
+                              </div>
+                              <div class="input-group-append">
+                                <a href="{{ site.baseurl }}/consent" class="btn btn-success transition">Next</a>
+                              </div>
+                            </div>
+                            <div>Audit information</div>
+                        </div>
+                        <div class="tab-pane fade" id="minap" role="tabpanel" aria-labelledby="v-pills-messages-tab">
+                            <div class="input-group mb-3">
+                              <div class="custom-file">
+                                <input type="file" class="custom-file-input" id="inputGroupFile02">
+                                <label class="custom-file-label" for="inputGroupFile02" aria-describedby="inputGroupFileAddon02">Choose role</label>
+                              </div>
+                              <div class="input-group-append">
+                                <a href="{{ site.baseurl }}/consent" class="btn btn-success transition">Next</a>
                                       </div>
                                     </div>
                                     <div>Audit information</div>  
@@ -104,6 +102,5 @@ layout: default
               </div>
             </div>
         </div>
-    </main>
-</body>
+
 
