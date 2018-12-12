@@ -12,8 +12,6 @@
     padding: 1.15rem 1.25rem;
     min-width: 220px;
     max-width: 220px;
-    background: #2e3e4e;
-    color: white;
 }
 .sidebar-sticky{
     padding-top: 4.5rem
@@ -32,4 +30,8 @@
 .nav-pills .nav-link {
     border-radius: 2rem;
     margin: 5px 0;
+}
+.bg-dark{
+    background: #2e3e4e;
+    color: white;
 }
