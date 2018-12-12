@@ -1,7 +1,9 @@
 ---
 layout: default
 ---
-{% include report-header.html progress="width:75%" %}
+{% capture progress_width %}
+  width:75%
+{% endcapture %}
 <div class="container-fluid">
   <div class="row">
     {% include sidenav.html %}
