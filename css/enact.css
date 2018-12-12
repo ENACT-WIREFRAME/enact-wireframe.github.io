@@ -5,8 +5,8 @@
     margin-left: -.15rem;
     margin-right: .375rem;
 }
-[role="main"], .form-signin {
-    padding-top: 130px;
+[role="main"], .signin {
+    padding-top: 80px;
 }
 .navbar-brand{
     padding: 1.15rem 1.25rem;
