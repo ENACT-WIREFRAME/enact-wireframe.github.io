@@ -16,12 +16,12 @@
 .sidebar-sticky{
     padding-top: 4.5rem
 }
-.form-signin {
+.signin {
     width: 100%;
     max-width: 900px;
     margin: auto;
 }
-.form-signin .nav-link {
+.signin .nav-link {
     color: #fff;
     background-color: #007bff;
 
