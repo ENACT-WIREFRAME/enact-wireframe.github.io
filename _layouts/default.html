@@ -14,13 +14,25 @@
 	<link href="{{ site.baseurl }}/css/bootstrap-grid.css" rel="stylesheet">
 	<link href="{{ site.baseurl }}/css/app.css" rel="stylesheet">
 	<script type="text/javascript" src="{{ site.baseurl }}/js/jquery-3.3.1.min.js"></script>
-
-</head>
-{{ content }}
 	<script type="text/javascript">
 	$(document).ready(function() {
-	$("body").css("display", "none");
+	    $("body").css("display", "none");
+
+	    $("body").fadeIn(2000);
+
+	    $("a.transition").click(function(event){
+		event.preventDefault();
+		linkLocation = this.href;
+		$("body").fadeOut(1000, redirectPage);      
+	    });
+
+	    function redirectPage() {
+		window.location = linkLocation;
+	    }
 	});
 	</script>
-
+</head>
+	
+{{ content }}
+	
 </html>
