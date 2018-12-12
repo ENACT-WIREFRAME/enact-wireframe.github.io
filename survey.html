@@ -3,32 +3,32 @@ layout: default
 ---
 {% include page-header.html %}
 
-<div class="container-fluid">
+<div class="container">
       <div class="row">
-        <nav class="col-md-2 d-none d-md-block bg-light sidebar">
-        </nav>
-
-        <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
-          <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Survey</h1>
-          </div>
-          <div class="row">
-                <form>
-                  <div class="form-group">
-                    <label for="formGroupExampleInput">Example label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+            <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
+                  <div class="card flex-fill w-100">
+                        <div class="card-header">
+                              <h5 class="card-title mb-0">Survey</h5>
+                        </div>
+                        <div class="card-body">
+                              <div class="row">
+                                    <form>
+                                          <div class="form-group">
+                                                <label for="formGroupExampleInput">Example label</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Example input">
+                                          </div>
+                                          <div class="form-group">
+                                                <label for="formGroupExampleInput2">Another label</label>
+                                                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
+                                          </div>
+                                    </form>
+                              </div>
+                              <div class="mr-2">
+                                    <a href="{{ site.baseurl }}/audit-report" class="btn btn-link transition">Back<span class="fa arrow"></span></a>
+                                    <a href="{{ site.baseurl }}/thank-you" class="btn btn-success transition">Submit<span class="fa arrow"></span></a>
+                              </div>                        
+                        </div>
                   </div>
-                  <div class="form-group">
-                    <label for="formGroupExampleInput2">Another label</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="Another input">
-                  </div>
-                </form>
-            </div>
-            <div class="mr-2">
-              <a href="{{ site.baseurl }}/audit-report" class="btn btn-link transition">Back<span class="fa arrow"></span></a>
-              <a href="{{ site.baseurl }}/thank-you" class="btn btn-success transition">Submit<span class="fa arrow"></span></a>
-              </div>
-          </div>
-        </main>
+            </main>
       </div>
-    </div>
+</div>
