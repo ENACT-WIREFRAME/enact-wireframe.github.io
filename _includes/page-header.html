@@ -2,7 +2,9 @@
 	<div class="container">
 		<a class="navbar-brand col-sm-3 col-md-2 mr-0 transition" href="{{ site.baseurl }}/index.html">{% include logo.html %}ENACT</a>
 		<!--<span id="audit-name" class="w-100">National Diabetes Audit</span>-->
-		{% include progressbar.html width=progress_width %}
+		<div class="progress" style="width:40%">
+		  <div class="progress-bar bg-success" role="progressbar" style=progress_width aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"></div>
+		</div>
 	</div>
 </div>
 	 
