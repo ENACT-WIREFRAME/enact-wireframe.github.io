@@ -16,11 +16,14 @@
 .sidebar-sticky{
     padding-top: 4.5rem
 }
-.signin {
+.signin{
     width: 100%;
-    max-width: 900px;
     margin: auto;
 }
+.signin, .signin .navbar .container{
+    max-width: 900px;
+}
+
 .signin .nav-link {
     color: #fff;
     background-color: #007bff;
