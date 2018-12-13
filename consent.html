@@ -1,9 +1,7 @@
 ---
 layout: page
 ---
-{% capture progress_width %}
-  width:50%
-{% endcapture %}
+
 <div class="container">
       <div class="card flex-fill w-100">
       <div class="card-header">
@@ -25,7 +23,9 @@ layout: page
             </div>
       </div>
 </div>    
-
+<script>
+  document.getElementsByClassName(".progress-bar")[0].setAttribute("style", "width='75%'");
+</script>
 
  
 
