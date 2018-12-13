@@ -3,13 +3,63 @@ layout: page
 ---
 
 <div class="row">
+    <div class="dropdown">
+      <button class="btn btn-secondary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Select your audit
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Blood Transfusions</a>
+        <a class="dropdown-item" href="#">MINAP</a>
+        <a class="dropdown-item" href="#">Nation Diabetes Audit</a>
+          <a class="dropdown-item" href="#">PICANET</a>
+          <a class="dropdown-item" href="#">TARN</a>
+      </div>
+    </div>
+    <div class="dropdown">
+      <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+       Select your role
+      </button>
+      <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+        <a class="dropdown-item" href="#">Fully trained doctor (e.g. consultant, general practitioner)</a>
+        <a class="dropdown-item" href="#">Training doctor (e.g. specialist registrar, foundation year)</a>
+        <a class="dropdown-item" href="#">Nurse or nurse specialist</a>
+        <a class="dropdown-item" href="#">Allied health professional</a>
+          <a class="dropdown-item" href="#">Manager</a>
+          <a class="dropdown-item" href="#">Other [please state]</a>
+      </div>
+    </div>
+    <div class="input-group mb-3" style="display:none">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Other</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Please state organisation type" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Select Organisation Type
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="#">Hospital Trust</a>
+            <a class="dropdown-item" href="#">Community Healthcare Trust</a>
+            <a class="dropdown-item" href="#">General Commissioning</a>
+            <a class="dropdown-item" href="#">Other [please state]</a>
+         </div>
+    </div>
+    <div class="input-group mb-3" style="display:none">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="basic-addon1">Other</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Please state organisation type" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+</div>
+    <!--
     <div class="col-4">
         <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
-          <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#bt" role="tab" aria-controls="v-pills-home" aria-selected="true">Blood Transfusions</a>
-          <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#minap" role="tab" aria-controls="v-pills-settings" aria-selected="false">MINAP</a>
-          <a class="nav-link" id="v-pills-home-tab" data-toggle="pill" href="#nda" role="tab" aria-controls="v-pills-home" aria-selected="true">National Diabetes Audit</a>
-          <a class="nav-link" id="v-pills-profile-tab" data-toggle="pill" href="#picanet" role="tab" aria-controls="v-pills-profile" aria-selected="false">PICANET</a>
-          <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#tarn" role="tab" aria-controls="v-pills-messages" aria-selected="false">TARN</a>
+          <a class="nav-link" id="bt-tab" data-toggle="pill" href="#bt" role="tab" aria-controls="v-pills-home" aria-selected="true">Blood Transfusions</a>
+          <a class="nav-link" id="minap-tab" data-toggle="pill" href="#minap" role="tab" aria-controls="v-pills-settings" aria-selected="false">MINAP</a>
+          <a class="nav-link" id="nda-tab" data-toggle="pill" href="#nda" role="tab" aria-controls="v-pills-home" aria-selected="true">National Diabetes Audit</a>
+          <a class="nav-link" id="picanet-tab" data-toggle="pill" href="#picanet" role="tab" aria-controls="v-pills-profile" aria-selected="false">PICANET</a>
+          <a class="nav-link" id="tarn-tab" data-toggle="pill" href="#tarn" role="tab" aria-controls="v-pills-messages" aria-selected="false">TARN</a>
         </div>
     </div>
     <div class="col-8">
@@ -96,7 +146,7 @@ layout: page
             </div>
           </div>
         </div>
-    </div>
+    </div>-->
 <script>
   document.getElementsByClassName("progress-bar")[0].setAttribute("style", "width:25%");
 </script>
