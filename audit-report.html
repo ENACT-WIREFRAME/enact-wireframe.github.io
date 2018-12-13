@@ -2,7 +2,7 @@
 layout: page
 ---
 
-<div class="container-fluid">
+<div class="container">
   <div class="row">
     <!--{% include sidenav.html %}-->
     <main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
@@ -49,9 +49,8 @@ layout: page
     <h2 id="results">Results</h2>
     <h2 id="tabs">Recommendations</h2>
     </main>
-  </div>
-</div>
-{{ include progressbar-width.html pb_width="50%" }}
+
+{{ include progressbar-width.html pb_width="width:50%" }}
 <!--<script>
   document.getElementsByClassName("progress-bar")[0].setAttribute("style", "width:50%");
 </script>-->
