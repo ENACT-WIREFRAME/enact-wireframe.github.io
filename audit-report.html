@@ -2,47 +2,52 @@
 layout: page
 ---
 <!--{% include sidenav.html %}-->
-<main role="main" class="col-md-9 ml-sm-auto col-lg-10 px-4"><div class="chartjs-size-monitor" style="position: absolute; left: 0px; top: 0px; right: 0px; bottom: 0px; overflow: hidden; pointer-events: none; visibility: hidden; z-index: -1;"><div class="chartjs-size-monitor-expand" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:1000000px;height:1000000px;left:0;top:0"></div></div><div class="chartjs-size-monitor-shrink" style="position:absolute;left:0;top:0;right:0;bottom:0;overflow:hidden;pointer-events:none;visibility:hidden;z-index:-1;"><div style="position:absolute;width:200%;height:200%;left:0; top:0"></div></div></div>
-  <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-    <h1 class="h2">Your Report</h1>
-    <div class="btn-toolbar mb-2 mb-md-0">
-      <div class="mr-2">
-            <a href="{{ site.baseurl }}/survey" class="btn btn-success">Next<span class="fa arrow"></span></a>
-      </div>
-    </div>
-  </div>
-  <h2 id="standard">Audit standard</h2>
-  <div class="table-responsive">
-    <table class="table table-striped table-sm">
-      <thead>
-        <tr>
-          <th>#</th>
-          <th>Header</th>
-          <th>Header</th>
-          <th>Header</th>
-          <th>Header</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>1,001</td>
-          <td>Lorem</td>
-          <td>ipsum</td>
-          <td>dolor</td>
-          <td>sit</td>
-        </tr>
-        <tr>
-          <td>1,002</td>
-          <td>amet</td>
-          <td>consectetur</td>
-          <td>adipiscing</td>
-          <td>elit</td>
-        </tr>
-      </tbody>
-    </table>
-  </div>
-  <h2 id="results">Results</h2>
-  <h2 id="tabs">Recommendations</h2>
+<main role="main">
+  <div class="card flex-fill">
+    <div class="card-header" id="headingOne">
+      <h5 class="card-title my-2">
+         Your Report<a href="{{ site.baseurl }}/survey" class="btn btn-success">Next<span class="fa arrow"></span></a>
+      </h5>
+    </div><!--end card header-->
+    <div class="card-body">
+      <div id="audit-standard" title="Audit Standard">
+        <blockquote class="blockquote" style="border-left:5px,blue">
+          <p class="mb-0">Adults with type 2 diabetes whose HbA1c level is 58mmol/mol 7.5% or above after 6 months with single-drug treatment are offered dual therapy.</p>
+          <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+        </blockquote>
+      </div><!--audit standard-->
+      <h2>Results</h2>
+      <div id="block-a" title="mod-7">
+          <h4>Your practice achieved this standard of care for <strong>86% (318/370) of patients</strong>. The top 25% of practices achieved this for <strong>93.7% or better</strong> of patients.</h4>
+      </div><!--end block a-->
+      <div id="block-b" title="mod-9">
+        {{ include mod-9-svg.html }}   
+        <p>This chart shows your performance in comparison with other general practices.</p>
+      </div><!--end block b-->
+      <div id="block-c" title="mod-3">
+        <h2>Recommendations</h2>
+      </div><!--end block c-->
+      <div id="block-d" title="mod-12">
+        <h2>Evidence</h2>
+        Tabs go here
+      </div><!--end block d-->
+      <div id="block-e" title="mod-16">
+        <h2>Patient story</h2>
+        <div class="white-box tag">
+            <h3 class="box-title">Patient Story<span class="label label-danger label-rounded pull-right" data-toggle="tooltip" data-placement="top" title="" data-original-title="Patient Story">#16</span></h3>
+            <div class="row">
+                <div class="col-md-1 col-sm-1">
+                  <img src="/images/patient.png" alt="patient photo" class="img-circle img-responsive">
+                </div>
+                <div class="col-md-11 col-sm-8">
+                    <h2 class="m-b-0">Daniel Kristeen</h2>
+                    <h4>I had struggled to keep my diabetes under control for over a year. I was taking medication already and seriously trying to improve my diet.  My Mum lost her sight because of diabetes and I was worried that this might happen to me.  My doctor prescribed me another medicine and suggested I try it for a while to see if it made an improvement.  Although I had doubts about starting another medicine, I’m glad that I did because my blood sugar is better now and I haven’t had any bad side effects. I know that doctors sometimes don’t want to push lots of medicines onto people with diabetes but it is only fair to the patient that they ask</h4>
+                </div>
+            </div>
+        </div>
+      </div><!--end block e-->
+   </div><!--end card body-->
+  </div><!--end card-->
 </main>
 <script>
   document.getElementsByClassName("progress-bar")[0].setAttribute("style", "width:60%");
