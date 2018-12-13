@@ -74,3 +74,6 @@
 .select-audit .btn-group{
     margin: 0 5px 20px 0;
 }
+.select-audit .badge{
+    margin-left: 2px;
+}
