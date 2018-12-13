@@ -12,7 +12,7 @@ layout: page
                 <label class="form-check">
                     <input class="form-check-input" type="checkbox" value="">
                     <span class="form-check-label">
-                        I have read and understand the <a href="#" id="pis-link" title="show PI sheet" data-toggle="modal" data-target="#pis">information sheet</a> dated <span id="consent-date">[insert date]</span> explaining this research project and I have had the opportunity to ask questions about the project.
+                        I have read and understand the <button type="button" class="btn btn-link" data-toggle="modal" data-target="#pis">information sheet</button> dated <span id="consent-date">[insert date]</span> explaining this research project and I have had the opportunity to ask questions about the project.
                         </span>
                 </label>
                 <label class="form-check">
@@ -81,7 +81,7 @@ layout: page
 <script>
     document.getElementsByClassName("progress-bar")[0].setAttribute("style", "width:25%");
     $('#pis').on('shown.bs.modal', function () {
-    })
+    });
  </script>
 
 
