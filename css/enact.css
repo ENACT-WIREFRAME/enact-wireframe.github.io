@@ -71,3 +71,7 @@
     background-color: #007bff;
     transition: width .6s ease;
 }
+.select-audit .dropdown{
+    margin: 10px;
+    width: 100%
+}
