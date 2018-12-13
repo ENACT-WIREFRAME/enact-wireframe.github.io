@@ -1,0 +1,3 @@
+<script>
+  document.getElementsByClassName("progress-bar")[0].setAttribute("style", "{{ include.pb_width }}");
+</script>
