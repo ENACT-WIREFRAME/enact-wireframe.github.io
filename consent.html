@@ -1,10 +1,88 @@
 ---
-layout: page
+layout: default
 ---
+<body class="text-centre signin">
+<div class="container">
+    <img class="mb-4" src="{{ site.baseurl }}/images/enact-big.svg" alt="" height="72">
+    <div class="card flex-fill w-100">
+        <div class="card-header">
+            <h5 class="card-title mb-0">Please confirm that you understand and agree to the following</h5>
+        </div>
+        <div class="card-body">
+            <div>
+                <label class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <span class="form-check-label">
+                        I have read and understand the <a href="#" id="pis" title="show PI sheet" data-toggle="modal" data-target="#information-sheet">information sheet</a> dated <span id="consent-date">[insert date]</span> explaining this research project and I have had the opportunity to ask questions about the project.
+                        </span>
+                </label>
+                <label class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <span class="form-check-label">
+                        <strong>My participation is voluntary and that I am free to withdraw at any time</strong> without giving any reason and without there being any negative consequences. In addition, should I not wish to answer any particular question or questions, I am free to decline.
+                    </span>
+                </label>
+                <label class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <span class="form-check-label">
+                        <strong>I will not be able to withdraw my data</strong> once I have completed this survey.
+                    </span>
+                </label>
+                <label class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <span class="form-check-label"> 
+                        I give <strong>permission for members of the research team to have access to my anonymised responses</strong>. I understand that my name will not be linked with the research materials, and I will not be identified or identifiable in the report or reports that result from the research. I understand that my responses will be kept strictly confidential.
+                    </span>
+                </label>
+                <label class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <span class="form-check-label">
+                        <strong>Data collected from me will be stored</strong> and used in relevant future research in an anonymised form.
+                    </span>
+                </label>
+                <label class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <span class="form-check-label">
+                        <strong>Other genuine researchers may have access to this data</strong> only if they agree to preserve the confidentiality of the information as requested in this form.
+                    </span>
+                </label>
+                <label class="form-check">
+                    <input class="form-check-input" type="checkbox" value="">
+                    <span class="form-check-label">
+                        Relevant sections of the data collected during the study, may be looked at by individuals from the University of Leeds or from regulatory authorities where it is relevant to my taking part in this research. I give permission for these individuals to have access to my records.
+                    </span>
+                </label>
+            </div>
 
-remove page
+            <div class="mr-2">
+                 <a id="" href="{{ site.baseurl }}/audit-report" class="btn btn-success transition">I agree to participate</a>
+            </div>
+        </div>
+    </div>
+</div>    
+<!---Modal--->
+<div class="modal" tabindex="-1" role="dialog" id="information-sheet">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Participant Information</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>Information goes here</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+ $('#myModal').on('shown.bs.modal', function () {
+})
+ </script>
 
 
- 
-
-   
+</body>
