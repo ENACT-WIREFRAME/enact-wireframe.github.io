@@ -20,6 +20,10 @@
 .text-primary{color:#707cd2}.text-megna{color:#01c0c8}
 .text-dark{color:#313131!important}
 
+.page [role="main"] {
+    padding-top: 80px;
+}
+
 /*.main {
     width: 100%;
     min-height: 100vh;
