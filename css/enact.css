@@ -1,6 +1,9 @@
 .navbar-brand, .sidebar-sticky{
-    background: #2e3e4e;
+    background: #343a40;
     color: white;
+}
+.navbar-brand, .sidebar-sticky{
+    box-shadow: none;
 }
 .navbar-brand svg {
     color: #0cc2aa;
