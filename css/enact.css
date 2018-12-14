@@ -18,7 +18,8 @@
 .text-danger {
     color: #ff7676;
 }
-.text-white{color:#ffffff}.text-danger{color:#ff7676}.text-muted{color:#8d9ea7}
+.text-white{color:#ffffff}.text-danger{color:#ff7676}
+.text-muted{color:#8d9ea7}
 .text-warning{color:#ffc36d}
 .text-success{color:#53e69d}
 .text-info{color:#FCF883}.text-inverse{color:#4c5667}
@@ -43,6 +44,31 @@
 .audit-standard blockquote p{
     margin: 30px;
 }
+/* ---- FOOTER STYLES ----- */
+.bd-footer {
+    font-size: 85%;
+    text-align: center;
+    background-color: #f7f7f7;
+}
+@media (min-width: 576px)
+.bd-footer {
+    text-align: left;
+}
+.bd-footer-links {
+    padding-left: 0;
+    margin-bottom: 1rem;
+}
+.bd-footer-links li {
+    display: inline-block;
+}
+.bd-footer a {
+    font-weight: 500;
+    color: #495057;
+}
+.bd-footer p {
+    margin-bottom: 0;
+}
+
 /*.main {
     width: 100%;
     min-height: 100vh;
