@@ -1,6 +1,7 @@
 ---
 layout: report
 ---
+<div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 <h1 class="h2">Your report</h1>
       <div class="btn-toolbar mb-2 mb-md-0">
             <div class="btn-group mr-2">
@@ -12,51 +13,49 @@ layout: report
                   This week
             </button>
       </div>
-      <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
-            <h1 class="h2">Your Report</h1>
-            <h2>National Diabetes Audit 2018-2019</h2> 
-            <div id="audit-standard" title="Audit Standard">
-                  <blockquote class="blockquote" style="border-left:5px,blue">
-                  <p class="mb-0">Adults with type 2 diabetes whose HbA1c level is 58mmol/mol 7.5% or above after 6 months with single-drug treatment are offered dual therapy.</p>
-                  <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
-                  </blockquote>
-            </div><!--audit standard-->
-            <h2>Results</h2>
-            <div id="block-a" title="mod-7">
-                  <h4>Your practice achieved this standard of care for <strong>86% (318/370) of patients</strong>. The top 25% of practices achieved this for <strong>93.7% or better</strong> of patients.</h4>
-            </div><!--end block a-->
-            <div id="block-b" title="mod-9">
-                  {{ include mod-9-svg.html }}   
-                  <p>This chart shows your performance in comparison with other general practices.</p>
-            </div><!--end block b-->
-            <div id="block-c" title="mod-3">
-                  <h2>Recommendations</h2>
-            </div><!--end block c-->
-            <div id="block-d" title="mod-12">
-                  <h2>Evidence</h2>
-                  Tabs go here
-            </div><!--end block d-->
-            <div id="block-e" title="mod-16">
-                  <h2>Patient story</h2>
-                  <div class="white-box tag">
-                        <h3 class="box-title">Patient Story<span class="label label-danger label-rounded pull-right" data-toggle="tooltip" data-placement="top" title="" data-original-title="Patient Story">#16</span></h3>
-                        <div class="row">
-                              <div class="col-md-1 col-sm-1">
-                                    <img src="/images/patient.png" alt="patient photo" class="img-circle img-responsive">
-                              </div>
-                              <div class="col-md-11 col-sm-8">
-                                    <h2 class="m-b-0">Daniel Kristeen</h2>
-                                    <h4>I had struggled to keep my diabetes under control for over a year. I was taking medication already and seriously trying to improve my diet.  My Mum lost her sight because of diabetes and I was worried that this might happen to me.  My doctor prescribed me another medicine and suggested I try it for a while to see if it made an improvement.  Although I had doubts about starting another medicine, I’m glad that I did because my blood sugar is better now and I haven’t had any bad side effects. I know that doctors sometimes don’t want to push lots of medicines onto people with diabetes but it is only fair to the patient that they ask</h4>
-                              </div>
-                        </div>
+</div>
+<h2>National Diabetes Audit 2018-2019</h2> 
+<div id="audit-standard" title="Audit Standard">
+      <blockquote class="blockquote" style="border-left:5px,blue">
+      <p class="mb-0">Adults with type 2 diabetes whose HbA1c level is 58mmol/mol 7.5% or above after 6 months with single-drug treatment are offered dual therapy.</p>
+      <footer class="blockquote-footer">Someone famous in <cite title="Source Title">Source Title</cite></footer>
+      </blockquote>
+</div><!--audit standard-->
+<h2>Results</h2>
+<div id="block-a" title="mod-7">
+      <h4>Your practice achieved this standard of care for <strong>86% (318/370) of patients</strong>. The top 25% of practices achieved this for <strong>93.7% or better</strong> of patients.</h4>
+</div><!--end block a-->
+<div id="block-b" title="mod-9">
+      {{ include mod-9-svg.html }}   
+      <p>This chart shows your performance in comparison with other general practices.</p>
+</div><!--end block b-->
+<div id="block-c" title="mod-3">
+      <h2>Recommendations</h2>
+</div><!--end block c-->
+<div id="block-d" title="mod-12">
+      <h2>Evidence</h2>
+      Tabs go here
+</div><!--end block d-->
+<div id="block-e" title="mod-16">
+      <h2>Patient story</h2>
+      <div class="white-box tag">
+            <h3 class="box-title">Patient Story<span class="label label-danger label-rounded pull-right" data-toggle="tooltip" data-placement="top" title="" data-original-title="Patient Story">#16</span></h3>
+            <div class="row">
+                  <div class="col-md-1 col-sm-1">
+                        <img src="/images/patient.png" alt="patient photo" class="img-circle img-responsive">
                   </div>
-            </div><!--end block e-->
-            <div class="btn-toolbar mb-2 mb-md-0">
-                  <div class="mr-2">
-                        <a href="/survey" class="btn btn-success">Next<span class="fa arrow"></span></a>
+                  <div class="col-md-11 col-sm-8">
+                        <h2 class="m-b-0">Daniel Kristeen</h2>
+                        <h4>I had struggled to keep my diabetes under control for over a year. I was taking medication already and seriously trying to improve my diet.  My Mum lost her sight because of diabetes and I was worried that this might happen to me.  My doctor prescribed me another medicine and suggested I try it for a while to see if it made an improvement.  Although I had doubts about starting another medicine, I’m glad that I did because my blood sugar is better now and I haven’t had any bad side effects. I know that doctors sometimes don’t want to push lots of medicines onto people with diabetes but it is only fair to the patient that they ask</h4>
                   </div>
             </div>
       </div>
+</div><!--end block e-->
+<div class="btn-toolbar mb-2 mb-md-0">
+      <div class="mr-2">
+            <a href="/survey" class="btn btn-success">Next<span class="fa arrow"></span></a>
+      </div>
+</div>
 <script>
   document.getElementsByClassName("progress-bar")[0].setAttribute("style", "width:60%");
 </script>
