@@ -23,6 +23,9 @@
 .page [role="main"] {
     padding-top: 80px;
 }
+.select-audit .btn-group{
+    margin: 0 5px 20px 0;
+}
 
 /*.main {
     width: 100%;
@@ -107,9 +110,6 @@
     white-space: nowrap;
     background-color: #007bff;
     transition: width .6s ease;
-}
-.select-audit .btn-group{
-    margin: 0 5px 20px 0;
 }
 .select-audit .badge{
     margin-left: 2px;
