@@ -1,3 +1,14 @@
+.navbar-brand{
+    background: #2e3e4e;
+    color: white;
+}
+.navbar-brand svg {
+    color: #0cc2aa;
+    height: 24px;
+    width: 24px;
+    margin-left: -.15rem;
+    margin-right: .375rem;
+}
 /*.main {
     width: 100%;
     min-height: 100vh;
@@ -22,13 +33,6 @@
     padding-top: .5rem;
     overflow-x: hidden;
     overflow-y: auto;
-}
-.navbar-brand svg {
-    color: #0cc2aa;
-    height: 24px;
-    width: 24px;
-    margin-left: -.15rem;
-    margin-right: .375rem;
 }
 [role="main"], .page {
     padding-top: 67px;
