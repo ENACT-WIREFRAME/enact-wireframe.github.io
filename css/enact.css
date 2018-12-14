@@ -36,7 +36,13 @@
 .select-audit{
     padding-bottom: 15px;
 }
-
+.audit-standard blockquote{
+    border-left: 10px solid #27aae1;
+    border-radius: 5px;
+}
+.audit-standard blockquote p{
+    margin: 30px;
+}
 /*.main {
     width: 100%;
     min-height: 100vh;
