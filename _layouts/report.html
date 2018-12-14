@@ -1,0 +1,42 @@
+---
+layout: default
+---
+<body class="text-centre signin">
+<div class="navbar navbar-dark fixed-top bg-dark flex-md-nowrap p-0 shadow">
+	<div class="container">
+		<a class="navbar-brand col-sm-3 col-md-2 mr-0 transition" href="{{ site.baseurl }}/index.html">{% include logo.html %}ENACT</a>
+		<!--<span id="audit-name" class="w-100">National Diabetes Audit</span>-->
+		{% include progress-bar.html progress_width="30%" %}
+</div>
+</div> 
+	<main role="main">
+		<div class="container">
+	    	{{ content }}  
+		</div> 
+	</main>
+	<footer class="footer">
+		<div class="container-fluid">
+			<div class="row text-muted">
+				<div class="col-6 text-left">
+					<ul class="list-inline">
+						<li class="list-inline-item">
+							<a class="text-muted" href="#"><img class="mb-4" src="{{ site.baseurl }}/images/leeds-logo.png" alt="" height="36"></a>
+						</li>
+						<li class="list-inline-item">
+							<a class="text-muted" href="#"><img class="mb-4" src="{{ site.baseurl }}/images/city-logo.png" alt="" height="36"></a>
+						</li>
+						<li class="list-inline-item">
+							<a class="text-muted" href="#"><img class="mb-4" src="{{ site.baseurl }}/images/nihr-logo.png" alt="" height="36"></a>
+						</li>
+					</ul>
+				</div>
+				<div class="col-6 text-right">
+					<p class="mb-0">
+						© 2019 - <a href="{{ site.baseurl }}/index" class="text-muted">ENACT</a>
+					</p>
+				</div>
+			</div>
+		</div>
+	</footer>
+	{% include bootstrap-js.html %}	   
+</body>
