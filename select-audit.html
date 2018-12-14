@@ -3,6 +3,59 @@ layout: page
 ---
 
 <div class="select-audit">
+    <form action="{{ site.baseurl }}/audit-report">
+  <div class="form-row align-items-center">
+    <div class="col-auto my-1">
+      <label class="mr-sm-2" for="auditSelect">1. Select your audit:</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Choose...</option>
+        <option value="1">Blood Transfusions</option>
+        <option value="2">Nation Diabetes Audit</option>
+        <option value="3">PICANET</option>
+        <option value="3">TARN</option>
+      </select>
+    </div>
+    <div class="col-auto my-1">
+      <label class="mr-sm-2" for="roleSelect">2. Select your role:</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Choose...</option>
+        <option value="1">Training doctor (e.g. specialist registrar, foundation year)</a>
+        <option value="2">Nurse or nurse specialist</option>
+        <option value="3">Allied health professional</option>
+        <option value="4">Manager</option>
+        <option value="5">Other [please state]</option>
+      </select>
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="roleInput">Other</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Please state organisation type" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    <div class="col-auto my-1">
+      <label class="mr-sm-2" for="organisationSelect">3. Organisation type:</label>
+      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+        <option selected>Choose...</option>
+        <option value="1">Hospital Trust</option>
+        <option value="2">Community Healthcare Trust</option>
+        <option value="3">General Commissioning</option>
+        <option value="4">Other [please state]</option>
+      </select>
+    </div>
+    <div class="input-group mb-3">
+        <div class="input-group-prepend">
+            <span class="input-group-text" id="organisationInput">Other</span>
+        </div>
+        <input type="text" class="form-control" placeholder="Please state organisation type" aria-label="Username" aria-describedby="basic-addon1">
+    </div>
+    
+    <div class="col-auto my-1">
+      <button type="submit" class="btn btn-primary">4. Submit and view report</button>
+      <!--<a id="" href="" class="btn btn-lg btn-secondary"><span class="badge badge-pill">4.</span>&nbsp;View audit report</a>-->
+    </div>
+  </div>
+</form>
+<!--    
     <div class="btn-group">
         <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             <span class="badge badge-pill">1.</span>&nbsp;Select your audit
@@ -54,7 +107,7 @@ layout: page
     <div class="mr-2">
         <a id="" href="{{ site.baseurl }}/audit-report" class="btn btn-lg btn-secondary"><span class="badge badge-pill">4.</span>&nbsp;View audit report</a>
     </div>
-</div><!--btn bar-->
+</div>--><!--btn bar-->
 <div class="card flex-fill">
     <div class="card-header">
         About <span id="audit-name">Blood Transfusions</span>
