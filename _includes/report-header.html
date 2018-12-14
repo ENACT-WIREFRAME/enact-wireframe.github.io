@@ -1,5 +1,10 @@
 <nav class="navbar fixed-top flex-md-nowrap p-0 shadow">
-	<a class="navbar-brand bg-dark col-sm-3 col-md-2 mr-0 transition" href="{{ site.baseurl }}/index">{% include logo.html %}ENACT</a>
+	<a class="navbar-brand col-sm-3 col-md-2 mr-0 transition" href="{{ site.baseurl }}/index">{% include logo.html %}ENACT</a>
 	<span id="audit-name" class="col-lg-3">National Diabetes Audit</span>
-	{{ include progress-bar.html }}
+	<ul class="navbar-nav px-3">
+		<li class="nav-item text-nowrap">
+		  	{{ include progress-bar.html }}
+		</li>
+	</ul>
 </nav>
+
