@@ -17,7 +17,7 @@
     margin-left: -.15rem;
     margin-right: .375rem;
 }
-[role="main"], .signin {
+[role="main"], .page {
     padding-top: 67px;
 }
 .navbar-brand{
@@ -79,4 +79,12 @@
 }
 .select-audit .badge{
     margin-left: 2px;
+}
+.sidebar, .sidebar-content {
+    background: #354052;
+}
+.sidebar {
+    min-width: 240px;
+    max-width: 240px;
+    transition: all .4s ease-in-out;
 }
