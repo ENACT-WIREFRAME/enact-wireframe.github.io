@@ -1,3 +1,16 @@
+.main {
+    width: 100%;
+    min-height: 100vh;
+    transition: all .4s ease-in-out;
+}
+.page .navbar{
+    background: #2e3e4e;
+    color: white;
+}
+.report .navbar{
+    background: white;
+    color: black;
+}
 .sidebar-sticky {
     position: -webkit-sticky;
     position: sticky;
@@ -24,6 +37,8 @@
     padding: 1.15rem 0rem;
     min-width: 220px;
     max-width: 220px;
+    background: #2e3e4e;
+    color: white;
 }
 .sidebar-sticky{
     padding-top: 4.5rem
