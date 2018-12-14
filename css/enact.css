@@ -12,6 +12,9 @@
     margin-left: -.15rem;
     margin-right: .375rem;
 }
+.page .navbar-brand{
+    padding-left:0
+}
 .text-danger {
     color: #ff7676;
 }
