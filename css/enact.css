@@ -28,18 +28,21 @@
 .sidebar-sticky{
     padding-top: 4.5rem
 }
-.signin{
+.page{
     width: 100%;
     margin: auto;
 }
-.signin, .signin .navbar .container{
+.page, .page .navbar .container{
     max-width: 900px;
 }
 
-.signin .nav-link {
+.page .nav-link {
     color: #fff;
     background-color: #007bff;
 
+}
+.report .navbar-brand{
+    padding: 1.15rem 1.5rem;
 }
 .nav-pills .nav-link {
     border-radius: 2rem;
