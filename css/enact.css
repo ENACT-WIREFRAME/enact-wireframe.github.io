@@ -72,7 +72,84 @@
 #pis .modal-dialog {
     max-width: 700px;
 }
+/* ---- TAB STYLES ----- */
+.manage-users {
+    margin-bottom: 30px;
+}
+.sttabs {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+    width: 100%;
+    font-weight: 300;
+}
+.tabs-style-iconbox nav {
+    background: #f7fafc;
+}
+.manage-users .tabs-style-iconbox nav {
+    background: #2cabe3;
+}
 
+element.style {
+}
+.sttabs nav ul {
+    position: relative;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: -moz-flex;
+    display: -ms-flex;
+    display: -webkit-box;
+    display: flex;
+    margin: 0 auto;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    list-style: none;
+    -ms-box-orient: horizontal;
+    -ms-box-pack: center;
+    -webkit-flex-flow: row wrap;
+    -moz-flex-flow: row wrap;
+    -ms-flex-flow: row wrap;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    flex-flow: row wrap;
+    -webkit-justify-content: center;
+    -moz-justify-content: center;
+    -ms-justify-content: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+}
+.sttabs nav ul li {
+    position: relative;
+    z-index: 1;
+    display: block;
+    margin: 0;
+    text-align: center;
+    -webkit-flex: 1;
+    -moz-flex: 1;
+    -ms-flex: 1;
+    -webkit-box-flex: 1;
+    flex: 1;
+}
+.tabs-style-iconbox nav ul li.tab-current {
+    z-index: 1;
+}
+.tabs-style-iconbox nav ul li.tab-current a {
+    background: #2cabe3;
+    color: #ffffff;
+    -webkit-box-shadow: -1px 0 0 #ffffff;
+    box-shadow: -1px 0 0 #ffffff;
+}
+.manage-users .tabs-style-iconbox nav ul li.tab-current a {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+.sttabs nav a span {
+    vertical-align: middle;
+    font-weight: 500;
+    font-size: 14px;
+    font-family: 'Rubik', sans-serif;
+}
 /*.main {
     width: 100%;
     min-height: 100vh;
