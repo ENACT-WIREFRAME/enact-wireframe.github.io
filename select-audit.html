@@ -2,57 +2,73 @@
 layout: page
 ---
 <h1>Your report awaits</h1>
-<form action="{{ site.baseurl }}/audit-report" class="select-audit">
-  <fieldset>
-    <div class="form-group">
-      <label class="mr-sm-2" for="auditSelect">1. Select your audit:</label>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Choose...</option>
-        <option value="1">Blood Transfusions</option>
-        <option value="2">Nation Diabetes Audit</option>
-        <option value="3">PICANET</option>
-        <option value="3">TARN</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label class="mr-sm-2" for="roleSelect">2. Select your role:</label>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Choose...</option>
-        <option value="1">Training doctor (e.g. specialist registrar, foundation year)</a>
-        <option value="2">Nurse or nurse specialist</option>
-        <option value="3">Allied health professional</option>
-        <option value="4">Manager</option>
-        <option value="5">Other [please state]</option>
-      </select>
-    </div>
-    <div class="form-group">
-        <label class="mr-sm-2" for="roleSelect">Please state role not listed</label>
-        <div class="input-group-prepend">
-            <span class="input-group-text" id="roleInput">Other</span>
-        </div>
-        <input type="text" class="form-control" placeholder="Please state organisation type" aria-label="Username" aria-describedby="basic-addon1">
-    </div>
-     <div class="form-group">
-      <label class="mr-sm-2" for="organisationSelect">3. Organisation type:</label>
-      <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
-        <option selected>Choose...</option>
-        <option value="1">Hospital Trust</option>
-        <option value="2">Community Healthcare Trust</option>
-        <option value="3">General Commissioning</option>
-        <option value="4">Other [please state]</option>
-      </select>
-    </div>
-    <div class="form-group">
-         <label class="mr-sm-2" for="roleSelect">Please state organisation not listed</label>
-        <div class="input-group-prepend">
-            <span class="input-group-text" id="organisationInput">Other</span>
-        </div>
-        <input type="text" class="form-control" placeholder="Please state organisation type" aria-label="Username" aria-describedby="basic-addon1">
-    </div>
-    <button type="submit" class="btn btn-primary">4. Submit and view report</button>
-      <!--<a id="" href="" class="btn btn-lg btn-secondary"><span class="badge badge-pill">4.</span>&nbsp;View audit report</a>-->
-  </fieldset>
-</form>
+<div class="col-md">
+  <form action="{{ site.baseurl }}/audit-report" class="select-audit">
+    <fieldset>
+      <div class="form-group">
+        <label class="mr-sm-2" for="auditSelect">1. Select your audit:</label>
+        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+          <option selected>Choose...</option>
+          <option value="1">Blood Transfusions</option>
+          <option value="2">Nation Diabetes Audit</option>
+          <option value="3">PICANET</option>
+          <option value="3">TARN</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="mr-sm-2" for="roleSelect">2. Select your role:</label>
+        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+          <option selected>Choose...</option>
+          <option value="1">Training doctor (e.g. specialist registrar, foundation year)</a>
+          <option value="2">Nurse or nurse specialist</option>
+          <option value="3">Allied health professional</option>
+          <option value="4">Manager</option>
+          <option value="5">Other [please state]</option>
+        </select>
+      </div>
+      <div class="form-group">
+          <label class="mr-sm-2" for="roleSelect">Please state role not listed</label>
+          <div class="input-group-prepend">
+              <span class="input-group-text" id="roleInput">Other</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Please state organisation type" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+       <div class="form-group">
+        <label class="mr-sm-2" for="organisationSelect">3. Organisation type:</label>
+        <select class="custom-select mr-sm-2" id="inlineFormCustomSelect">
+          <option selected>Choose...</option>
+          <option value="1">Hospital Trust</option>
+          <option value="2">Community Healthcare Trust</option>
+          <option value="3">General Commissioning</option>
+          <option value="4">Other [please state]</option>
+        </select>
+      </div>
+      <div class="form-group">
+           <label class="mr-sm-2" for="roleSelect">Please state organisation not listed</label>
+          <div class="input-group-prepend">
+              <span class="input-group-text" id="organisationInput">Other</span>
+          </div>
+          <input type="text" class="form-control" placeholder="Please state organisation type" aria-label="Username" aria-describedby="basic-addon1">
+      </div>
+      <button type="submit" class="btn btn-primary">4. Submit and view report</button>
+        <!--<a id="" href="" class="btn btn-lg btn-secondary"><span class="badge badge-pill">4.</span>&nbsp;View audit report</a>-->
+    </fieldset>
+  </form>
+</div>
+<div class="col-md">
+  <div class="card flex-fill">
+      <div class="card-header">
+          About <span id="audit-name">Blood Transfusions</span>
+      </div>
+      <div class="card-body my-2" id="audit-about">
+          <p>
+            Patient blood management applies evidence-based medicine to transfusion practice, including the treatment and management of pre-operative anaemia, the management of haemostasis and blood conservation. 
+            Transfusion is a life-saving intervention in certain situations where no alternative exists, e.g. exsanguination or marrow failure. However, in most clinical settings, red cell transfusions are administered to patients without active bleeding. Randomised controlled trials indicate no evidence of benefit for policies of liberal transfusions and even suggest patient harm compared to restrictive use of blood. Patient blood management aims to make the most appropriate use of the limited donated blood supply whilst improving patient outcomes.
+            Despite many national and international recommendations supporting patient blood management, previous audits and surveys have shown variable uptake across the UK and highlighted areas for improvement.
+          </p>
+      </div>
+  </div><!--card-->
+</div>
 <!--    
     <div class="btn-group">
         <button class="btn btn-primary btn-lg dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -106,16 +122,7 @@ layout: page
         <a id="" href="{{ site.baseurl }}/audit-report" class="btn btn-lg btn-secondary"><span class="badge badge-pill">4.</span>&nbsp;View audit report</a>
     </div>
 </div>--><!--btn bar-->
-<div class="card flex-fill">
-    <div class="card-header">
-        About <span id="audit-name">Blood Transfusions</span>
-    </div>
-    <div class="card-body my-2" id="audit-about">
-        <p>Patient blood management applies evidence-based medicine to transfusion practice, including the treatment and management of pre-operative anaemia, the management of haemostasis and blood conservation. 
-Transfusion is a life-saving intervention in certain situations where no alternative exists, e.g. exsanguination or marrow failure. However, in most clinical settings, red cell transfusions are administered to patients without active bleeding. Randomised controlled trials indicate no evidence of benefit for policies of liberal transfusions and even suggest patient harm compared to restrictive use of blood. Patient blood management aims to make the most appropriate use of the limited donated blood supply whilst improving patient outcomes.
-Despite many national and international recommendations supporting patient blood management, previous audits and surveys have shown variable uptake across the UK and highlighted areas for improvement.</p>
-    </div>
-</div><!--card-->
+
    
 
     <!--
