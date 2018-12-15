@@ -1,3 +1,9 @@
+/* ---- DISPLAY STYLES ---- */
+.di {
+    display: inline-block;
+}
+
+/* ---- NAV STYLES ---- */
 .navbar-brand, .sidebar-sticky{
     background: #343a40;
     color: white;
@@ -89,9 +95,6 @@
 .manage-users .tabs-style-iconbox nav {
     background: #2cabe3;
 }
-
-element.style {
-}
 .sttabs nav ul {
     position: relative;
     display: -ms-flexbox;
@@ -153,6 +156,21 @@ element.style {
 /* ---- FONT STYLES ----- */
 .report p {
     font-size: 1.5rem;
+}
+/* ---- REPORT STYLES ---- */
+.bg-warning {
+    background-color: #ffc36d!important;
+}
+.circle {
+    border-radius: 100%;
+    text-align: center;
+    color: #ffffff;
+}
+.circle-md {
+    width: 40px;
+    padding-top: 8px;
+    height: 40px;
+    font-size: 18px!important;
 }
 /*.main {
     width: 100%;
