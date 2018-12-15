@@ -134,6 +134,10 @@
     -webkit-box-flex: 1;
     flex: 1;
 }
+.manage-users .tabs-style-iconbox nav ul li a {
+    color: rgba(255, 255, 255, 0.7);
+    text-transform: uppercase;
+}
 .tabs-style-iconbox nav ul li.tab-current {
     z-index: 1;
 }
@@ -152,6 +156,23 @@
     font-weight: 500;
     font-size: 14px;
     font-family: 'Rubik', sans-serif;
+}
+.manage-users .tabs-style-iconbox nav ul li a.sticon:before {
+    margin-bottom: 15px;
+}
+.tabs-style-iconbox .sticon:before {
+    display: block;
+    margin: 0 0 0.25em 0;
+}
+.sticon:before {
+    display: inline-block;
+    margin: 0 0.4em 0 0;
+    vertical-align: middle;
+    font-size: 20px;
+    speak: none;
+    -webkit-backface-visibility: hidden;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 /* ---- FONT STYLES ----- */
 .report p {
