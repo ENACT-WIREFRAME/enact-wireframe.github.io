@@ -324,4 +324,8 @@ layout: report
 </div>
 <script>
   document.getElementsByClassName("progress-bar")[0].setAttribute("style", "width:60%");
+      $('#myTab a').on('click', function (e) {
+            e.preventDefault()
+            $(this).tab('show')
+      })
 </script>
