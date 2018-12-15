@@ -68,6 +68,10 @@
 .bd-footer p {
     margin-bottom: 0;
 }
+/* ---- CONSENT STYLES ----- */
+#pis .modal-dialog {
+    max-width: 700px;
+}
 
 /*.main {
     width: 100%;
