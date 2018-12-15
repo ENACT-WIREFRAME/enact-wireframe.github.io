@@ -197,6 +197,9 @@
 .likert-stacked .form-check-label {
     display:block
 }
+form .list-group-item{
+    border: 0 none;
+}
 /*.main {
     width: 100%;
     min-height: 100vh;
