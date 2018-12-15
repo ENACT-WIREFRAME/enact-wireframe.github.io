@@ -178,6 +178,10 @@
 .report p {
     font-size: 1.5rem;
 }
+h1, .h1 {
+    font-size: 2rem;
+    margin-bottom: 1em;
+}
 /* ---- REPORT STYLES ---- */
 .bg-warning {
     background-color: #ffc36d!important;
