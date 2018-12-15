@@ -193,6 +193,10 @@
     height: 40px;
     font-size: 18px!important;
 }
+/* ---- FORM STYLES ---- */
+.likert-stacked .form-check-label {
+    display:block
+}
 /*.main {
     width: 100%;
     min-height: 100vh;
