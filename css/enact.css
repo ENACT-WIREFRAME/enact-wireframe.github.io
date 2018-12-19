@@ -211,6 +211,9 @@ h2 {
     border: 0 none;
     margin: 12px 0;
 }
+.survey .question {
+    margin: 0;
+}
 .likert-stacked .form-check-label {
     display:block
 }
