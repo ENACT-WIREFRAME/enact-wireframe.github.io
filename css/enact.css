@@ -204,6 +204,9 @@ h2 {
     font-size: 18px!important;
 }
 /* ---- SURVEY STYLES ---- */
+.survey h2 {
+    margin: 1.5em 0;
+}
 .likert-stacked .form-check-label {
     display:block
 }
