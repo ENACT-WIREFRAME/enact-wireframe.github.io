@@ -207,6 +207,9 @@ h2 {
 .likert-stacked .form-check-label {
     display:block
 }
+.survey label{
+    margin-bottom:0
+}
 form .list-group-item{
     border: 0 none;
 }
