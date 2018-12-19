@@ -204,7 +204,7 @@ h2 {
     font-size: 18px!important;
 }
 /* ---- SURVEY STYLES ---- */
-.survey h2 {
+.page h2 {
     margin: 1.5em 0;
 }
 .survey .list-group-item {
@@ -227,7 +227,7 @@ badge-success.tint{
 .survey .badge {
     border-radius: 3rem;
     margin-right: 10px;
-    padding: 5px 10px
+    padding: 5px 10px;
 }
 /*.main {
     width: 100%;
