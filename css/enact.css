@@ -207,6 +207,10 @@ h2 {
 .survey h2 {
     margin: 1.5em 0;
 }
+.survey .list-group-item {
+    border: 0 none;
+    margin: 12px 0;
+}
 .likert-stacked .form-check-label {
     display:block
 }
