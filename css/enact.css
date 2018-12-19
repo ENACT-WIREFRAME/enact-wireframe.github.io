@@ -210,7 +210,7 @@ h2 {
 form .list-group-item{
     border: 0 none;
 }
-success.tint{
+badge-success.tint{
     background-colour: rgba(40,167,69, 0.5);
 }
 /* ---- BADGE STYLES ---- */
