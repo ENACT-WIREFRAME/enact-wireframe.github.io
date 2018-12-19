@@ -186,7 +186,7 @@ h1 .text-muted{margin-left: 10px}
 }
 h1, .h1 {
     font-size: 2rem;
-    margin-bottom: 1em;
+    margin: 1em 0;
 }
 /* ---- REPORT STYLES ---- */
 .bg-warning {
