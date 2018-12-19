@@ -33,7 +33,7 @@
 .text-muted{color:#8d9ea7}
 .text-warning{color:#ffc36d}
 .text-success{color:#53e69d}
-.text-info{color:#FCF883}.text-inverse{color:#4c5667}
+.text-info{color:#FCF883 !important}.text-inverse{color:#4c5667}
 .text-blue{color:#02bec9}.text-purple{color:#707cd2}
 .text-primary{color:#707cd2}.text-megna{color:#01c0c8}
 .text-dark{color:#313131!important}
