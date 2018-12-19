@@ -37,6 +37,9 @@
 .text-blue{color:#02bec9}.text-purple{color:#707cd2}
 .text-primary{color:#707cd2}.text-megna{color:#01c0c8}
 .text-dark{color:#313131!important}
+cls-12{
+    stroke: #e17c7c !important;
+}
 
 h1 .text-muted{margin-left: 10px}
 
