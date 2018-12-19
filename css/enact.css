@@ -203,12 +203,15 @@ h2 {
     height: 40px;
     font-size: 18px!important;
 }
-/* ---- FORM STYLES ---- */
+/* ---- SURVEY STYLES ---- */
 .likert-stacked .form-check-label {
     display:block
 }
 form .list-group-item{
     border: 0 none;
+}
+success.tint{
+    background-colour: rgba(40,167,69, 0.5);
 }
 /* ---- BADGE STYLES ---- */
 .survey .badge {
