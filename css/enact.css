@@ -37,6 +37,8 @@
 .text-primary{color:#707cd2}.text-megna{color:#01c0c8}
 .text-dark{color:#313131!important}
 
+h1 .text-muted{margin-left: 10px}
+
 .page [role="main"] {
     padding-top: 80px;
 }
