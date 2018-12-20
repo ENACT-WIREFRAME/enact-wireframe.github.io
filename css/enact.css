@@ -26,6 +26,9 @@
 .page .navbar-brand{
     padding-left:0
 }
+.sidebar .nav-link{
+    color: #0056b3
+}
 .text-danger {
     color: #ff7676;
 }
