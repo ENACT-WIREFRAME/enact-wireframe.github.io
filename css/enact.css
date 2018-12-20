@@ -92,6 +92,9 @@ h1 .text-muted{margin-left: 10px}
 .nav-tabs{
     margin: 1.5rem 0
 }
+.tab-content ul{
+    margin-left: 0
+}
 .manage-users {
     margin-bottom: 30px;
 }
