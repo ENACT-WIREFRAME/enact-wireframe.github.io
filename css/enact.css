@@ -90,7 +90,7 @@ h1 .text-muted{margin-left: 10px}
 }
 /* ---- TAB STYLES ----- */
 .nav-tabs{
-    margin-top: 1.5rem
+    margin: 1.5rem 0
 }
 .manage-users {
     margin-bottom: 30px;
