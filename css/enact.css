@@ -219,9 +219,8 @@ h2 {
 .legend h5{
     font-size: 14px
 }
-@media (min-width: 576px)
-    .report .modal-dialog {
-        max-width: 900px;
+.report .modal-dialog {
+        max-width: 900px !important;
         font-size: 14px;
 }
 /* ---- SURVEY STYLES ---- */
