@@ -201,6 +201,9 @@ h2 {
     font-size: 2rem;
     margin-top: 1.5em;
 }
+.report .section{
+    margin: 10px 0
+}
 /* ---- REPORT STYLES ---- */
 .bg-warning {
     background-color: #ffc36d!important;
