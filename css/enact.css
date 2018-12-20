@@ -95,6 +95,9 @@ h1 .text-muted{margin-left: 10px}
 .tab-content ul{
     padding: 10px 0
 }
+.tab-content h4{
+    margin-bottom: 0.5rem;
+}
 .manage-users {
     margin-bottom: 30px;
 }
