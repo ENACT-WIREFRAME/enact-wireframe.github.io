@@ -204,6 +204,9 @@ h2 {
     font-size: 2rem;
     margin-top: 1.5em;
 }
+.report h2{
+    margin: 1.5em 0 0.5em 0;
+}
 .report .section{
     margin: 10px 0
 }
