@@ -13,18 +13,32 @@ layout: page
                   <p>Top tips for <span id="audit-name">[name of audit]</span></p>
                   <p>
                         If you wish to receive the £25 voucher and /or the certificate of completion, please share your contact details below so that we can send one or both of these to you. If you do not wish to receive either of these, you can exit the survey now. 
-
                   </p>
-                  <div>
-                        Yes, I wish to receive the £25 voucher
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck1">
+                    <label class="form-check-label" for="defaultCheck1">
+                      Yes, I wish to receive the £25 voucher
+                    </label>
                   </div>
-                  <div>
-                        Yes, I wish to receive a certificate of completion for my Continuing Professional Development records
+                  <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="defaultCheck2">
+                    <label class="form-check-label" for="defaultCheck2">
+                      Yes, I wish to receive a certificate of completion for my Continuing Professional Development records
+                    </label>
                   </div>
-                  <div><input type="text" value="" placeholder="Name"></div>
-                  <div><input type="email" value="" placeholder="Email address"></div>
-                  <div><input type="email" value="" placeholder="Confirm email address"></div>
-                  <input class="button button-success" type="submit" value="Submit">
+                  <form class="form-inline">
+                    <label class="sr-only" for="inlineFormInputName2">Name</label>
+                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Jane Doe">
+
+                    <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+                    <div class="input-group mb-2 mr-sm-2">
+                      <div class="input-group-prepend">
+                        <div class="input-group-text">@</div>
+                      </div>
+                      <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Username">
+                    </div>
+                    <button type="submit" class="btn btn-primary mb-2">Submit</button>
+                  </form>
             </div>
             <div class="mr-2">
                   For further information on target levels and treatment options please see <a href="https://cks.nice.org.uk/diabetes-type-2#!scenario" class="btn btn-success">NICE guidance</a>
