@@ -387,20 +387,11 @@ layout: report
             $(this).tab('show')
       })
       function toggleOn() {
-        var x = document.getElementByClass("on");
+        var x = document.getElementByClass("toggle-mod");
         if (x.style.display === "none") {
           x.style.display = "block";
         } else {
           x.style.display = "none";
         }
-      }
-      function toggleOff() {
-        var x = document.getElementByClass("of");
-        if (x.style.display === "none") {
-          x.style.display = "block";
-        } else {
-          x.style.display = "none";
-        }
-      }
-      
+      }      
 </script>
