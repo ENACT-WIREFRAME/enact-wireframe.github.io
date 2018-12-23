@@ -3,8 +3,10 @@ layout: report
 ---
 <div class="d-flex justify-content-between flex-wrap flex-md-nowrap align-items-center pt-3 pb-2 mb-3 border-bottom">
 <h1 class="h2">National Diabetes Audit<small class="text-muted">2018-2019</small>
-      <button class="toggle-mod" onclick="toggleOn()">Toggle On</button>
-      <button class="toggle-mod" onclick="toggleOff()">Toggle Off</button>
+      <label class="switch pull-right">
+        <input type="checkbox" id="toggleSwitch">
+        <span class="slider round"></span>
+      </label>
 </h1>
 </div> 
 <div id="audit-standard" class="audit-standard" title="Audit Standard">
@@ -15,20 +17,20 @@ layout: report
 <h2>Results</h2>
       <p>Your practice achieved this standard of care for <strong>86% (318/370) of patients</strong>.</p>
 <div id="block-a" title="mod-7">
-      <p class="mod-on" style="display:block">The top 25% of practices achieved this for <strong>93.7% or better</strong> of patients.</p>
-      <p class="mod-off" style="display:none">This compares to the national achievement of <strong>79%.</strong></p>
+      <p class="toggle-mod" style="display:block">The top 25% of practices achieved this for <strong>93.7% or better</strong> of patients.</p>
+      <p class="toggle-mod" style="display:none">This compares to the national achievement of <strong>79%.</strong></p>
 </div><!--end block a-->
 <div id="block-b" title="mod-9">
-      <div class="mod-on" style="display:block">
+      <div class="toggle-mod" style="display:block">
             <p>This chart shows your performance in comparison with other general practices.</p>
             {% include mod-9-svg.html %}  
       </div>
-      <div class="mod-off" style="display:none">
+      <div class="toggle-mod" style="display:none">
             <!--Off contains no content-->  
       </div>
 </div><!--end block b-->
 <div id="block-c" title="mod-3" class="section">
-      <div class="mod-on" style="display:block">
+      <div class="toggle-mod" style="display:block">
             <h2>Recommendations for action</h2>
             <ul class="list-group">
                   <li class="list-group-item">
@@ -45,12 +47,12 @@ layout: report
                   </li>                
             </ul>
       </div>
-      <div class="mod-off" style="display:none">
+      <div class="toggle-mod" style="display:none">
             <!--Off contains no content--> 
       </div>
 </div><!--end block c-->
 <div id="block-d" title="mod-12" class="section">
-      <div class="mod-on" style="display:block">
+      <div class="toggle-mod" style="display:block">
             <ul class="nav nav-tabs" id="myTab" role="tablist">
               <li class="nav-item">
                 <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Evidence</a>
@@ -293,7 +295,7 @@ layout: report
                               </div><!--end table-responsive-->
                         </div><!--end therapies tab-pane-->
                   </div><!--end mod-on-->
-                  <div class="mod-off" style="display:none">
+                  <div class="toggle-mod" style="display:none">
                          <!--Off contains no content-->       
                   </div>
             </div>
@@ -304,7 +306,7 @@ layout: report
       </script>
 </div><!--end block d-->
 <div id="block-e" title="mod-16" class="patient-story section">
-      <div class="mod-on" style="display:block">
+      <div class="toggle-mod" style="display:block">
             <h2>Patient story</h2>
             <div class="media">
               <img src="/images/patient.png" alt="patient photo" class="img-circle img-responsive align-self-start mr-3" style="width:32px; height:32px">
@@ -315,7 +317,7 @@ layout: report
               </div>
             </div>
       </div>
-      <div class="mod-off" style="display:none">
+      <div class="toggle-mod" style="display:none">
              <!--Off contains no content-->       
       </div>
       <!--
@@ -332,10 +334,10 @@ layout: report
       -->
 </div><!--end block e-->
 <div id="block-f" title="mod-16" class="">
-      <div class="mod-on" style="display:none">
+      <div class="toggle-mod" style="display:none">
              <!--On contains no content-->       
       </div>
-      <div class="mod-off" style="display:block">
+      <div class="toggle-mod" style="display:block">
              <div class="row">
                   <div class="col-sm-12 col-md-6 col-lg-6">
                     <div class="white-box tag">
@@ -386,7 +388,7 @@ layout: report
             e.preventDefault()
             $(this).tab('show')
       })
-      function toggleOn() {
+      function toggleSwitch() {
         var x = document.getElementByClass("toggle-mod");
         if (x.style.display === "none") {
           x.style.display = "block";
