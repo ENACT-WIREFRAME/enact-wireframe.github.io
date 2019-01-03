@@ -261,17 +261,19 @@ badge-success.tint{
 label.agree, label.disagree{
     display: block;
     top: -15px;
-    margin-left: -30px
 }
-/*label.agree, label.disagree{
+/*
+label.agree, label.disagree{
     text-align: right;
 }
-label.agree, label.disagree{
+*/
+label.agree{
     text-align: left;
-}*/
+    margin-left: -30px
+}
 .likert-scale{
     margin-top: 5px;
-    margin-left: 30px
+    margin-left: 30px;
 }
 /* ---- BADGE STYLES ---- */
 .survey .badge {
