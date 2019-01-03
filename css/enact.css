@@ -259,14 +259,16 @@ badge-success.tint{
     background-colour: rgba(40,167,69, 0.5);
 }
 label.agree, label.disagree{
-    padding: .5em;
+    display: block;
+    position: absolute;
+    top: -15px;
 }
-label.agree, label.disagree{
+/*label.agree, label.disagree{
     text-align: right;
 }
 label.agree, label.disagree{
     text-align: left;
-}
+}*/
 .likert-scale{
     margin-top: 5px
 }
