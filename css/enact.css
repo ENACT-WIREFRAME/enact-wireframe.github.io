@@ -258,6 +258,18 @@ form .list-group-item{
 badge-success.tint{
     background-colour: rgba(40,167,69, 0.5);
 }
+label.agree, label.disagree{
+    padding: .5em;
+}
+label.agree, label.disagree{
+    text-align: right;
+}
+label.agree, label.disagree{
+    text-align: left;
+}
+.likert-scale{
+    margin-top: 5px
+}
 /* ---- BADGE STYLES ---- */
 .survey .badge {
     border-radius: 3rem;
@@ -265,9 +277,6 @@ badge-success.tint{
     padding: 5px 10px;
 }
 
-.page .form-check{
-    margin-left: 1.25rem;
-}
 /*.main {
     width: 100%;
     min-height: 100vh;
